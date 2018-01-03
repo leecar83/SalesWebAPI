@@ -13,6 +13,9 @@ using System.Web;
 
 namespace SalesWebAPI
 {
+    /// <summary>
+    /// DataAccess class
+    /// </summary>
     public class DataAccess
     {
         /// <summary>

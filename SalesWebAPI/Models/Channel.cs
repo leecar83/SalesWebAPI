@@ -7,10 +7,13 @@ using System.Web;
 
 namespace SalesWebAPI.Models
 {
+    /// <summary>
+    /// Represents a Channel
+    /// </summary>
     public class Channel
     {
         /// <summary>
-        /// Destination Code or Channel
+        /// Destination Code Indentifier
         /// </summary>
         [DataMember(IsRequired = true)]
         [JsonProperty(Order = 1)]

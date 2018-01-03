@@ -7,6 +7,9 @@ using System.Web;
 
 namespace SalesWebAPI.Models
 {
+    /// <summary>
+    /// Represents ones restaurant sales data object
+    /// </summary>
     [DataContract]
     public class RestaurantSales
     {
@@ -47,7 +50,7 @@ namespace SalesWebAPI.Models
         /// <summary>
         /// Uploads daily sales data to DataBase
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Restaurant Number</returns>
         public int UploadData()
         {
             foreach (Channel channel in Channels)

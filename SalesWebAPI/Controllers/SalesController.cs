@@ -8,6 +8,9 @@ using System.Web.Http;
 
 namespace SalesWebAPI.Controllers
 {
+    /// <summary>
+    /// Main Controller for sales data
+    /// </summary>
     public class SalesController : ApiController
     {
         // GET api/values
@@ -23,6 +26,11 @@ namespace SalesWebAPI.Controllers
         }
 
         // POST api/values
+        /// <summary>
+        /// Posts a Restaurant sales data object to the database(updates or adds)
+        /// </summary>
+        /// <param name="sales">Sales Object</param>
+        /// <returns></returns>
         public int Post([FromBody]RestaurantSales sales)
         {
             return sales.UploadData();

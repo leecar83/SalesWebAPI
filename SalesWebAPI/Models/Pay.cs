@@ -7,6 +7,9 @@ using System.Web;
 
 namespace SalesWebAPI.Models
 {
+    /// <summary>
+    /// Class to hold Paytype
+    /// </summary>
     public class Pay
     {
         /// <summary>
