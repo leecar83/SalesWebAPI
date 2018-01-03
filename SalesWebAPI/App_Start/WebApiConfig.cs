@@ -13,7 +13,7 @@ namespace SalesWebAPI
 
             // Web API routes
             config.MapHttpAttributeRoutes();
-
+            config.Filters.Add(new BasicAuthenticationAttribute());
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

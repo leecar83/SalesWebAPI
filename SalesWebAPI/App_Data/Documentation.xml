@@ -481,6 +481,30 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="T:SalesWebAPI.Authentication">
+            <summary>
+            Class to authenticate a user
+            </summary>
+        </member>
+        <member name="M:SalesWebAPI.Authentication.VaidateUser(System.String,System.String)">
+            <summary>
+            Validates a user's credentials
+            </summary>
+            <param name="username">User's Username</param>
+            <param name="password">User's Password</param>
+            <returns>boolean indicating whether a user is valid</returns>
+        </member>
+        <member name="T:SalesWebAPI.BasicAuthenticationAttribute">
+            <summary>
+            Class to perform authentication
+            </summary>
+        </member>
+        <member name="M:SalesWebAPI.BasicAuthenticationAttribute.OnAuthorization(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Performs the authentication
+            </summary>
+            <param name="actionContext"></param>
+        </member>
         <member name="T:SalesWebAPI.Controllers.SalesController">
             <summary>
             Main Controller for sales data
@@ -488,7 +512,7 @@
         </member>
         <member name="M:SalesWebAPI.Controllers.SalesController.Post(SalesWebAPI.Models.RestaurantSales)">
             <summary>
-            Posts a Restaurant sales data object to the database(updates or adds)
+            Posts a Restaurant sales data object to the database(updates or adds if not present)
             </summary>
             <param name="sales">Sales Object</param>
             <returns></returns>

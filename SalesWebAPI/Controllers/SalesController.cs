@@ -27,7 +27,7 @@ namespace SalesWebAPI.Controllers
 
         // POST api/values
         /// <summary>
-        /// Posts a Restaurant sales data object to the database(updates or adds)
+        /// Posts a Restaurant sales data object to the database(updates or adds if not present)
         /// </summary>
         /// <param name="sales">Sales Object</param>
         /// <returns></returns>
