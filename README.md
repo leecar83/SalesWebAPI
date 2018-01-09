@@ -1,5 +1,5 @@
 # SalesWebAPI
-ASP.NET Core WEB API that receives and stores hourly sales data. Clients systems send hourly sales data in a JSON formatted POST 
+ASP.NET WEB API that receives and stores hourly sales data. Clients systems send hourly sales data in a JSON formatted POST 
 request to the server which then stores this data in a MS SQL Server database. An example POST request as well as DB startup script is 
 included.
 
